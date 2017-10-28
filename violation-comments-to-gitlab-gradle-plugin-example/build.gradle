@@ -1,0 +1,37 @@
+buildscript {
+ repositories {
+  mavenLocal()
+  mavenCentral()
+ }
+
+ dependencies {
+  classpath "se.bjurr.violations:violation-comments-to-gitlab-gradle-plugin:1.0-SNAPSHOT"
+ }
+}
+
+apply plugin: "se.bjurr.violations.violation-comments-to-gitlab-gradle-plugin"
+task violationCommentsToGitLab(type: se.bjurr.violations.comments.gitlab.plugin.gradle.ViolationCommentsToGitLabTask) {
+ gitLabUrl = System.properties['GITLAB_URL'];
+ mergeRequestId = System.properties['GITLAB_MERGEREQUESTID'];
+ projectId = System.properties['GITLAB_PROJECTID'];
+
+ commentOnlyChangedContent = true;
+ createCommentWithAllSingleFileComments = true;
+ keepOldComments = false;
+ minSeverity = "INFO";
+
+ apiTokenPrivate = true;
+ apiToken = System.properties['GITLAB_APITOKEN'];
+ authMethodHeader = true;
+ ignoreCertificateErrors = true;
+
+ shouldSetWip = false;
+
+ violations = [
+  ["FINDBUGS",   ".", ".*/findbugs/.*\\.xml\$",   "Findbugs"],
+  ["PMD",        ".", ".*/pmd/.*\\.xml\$",        "PMD"],
+  ["CHECKSTYLE", ".", ".*/checkstyle/.*\\.xml\$", "Checkstyle"],
+  ["JSHINT",     ".", ".*/jshint/.*\\.xml\$",     "JSHint"],
+  ["CSSLINT",    ".", ".*/csslint/.*\\.xml\$",     "CssLint"]
+ ]
+}
