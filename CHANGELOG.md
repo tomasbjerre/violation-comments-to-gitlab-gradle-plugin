@@ -3,9 +3,9 @@
 ## Unreleased
 ### No issue
 
-**Initial**
+**Doc**
 
 
-[2d53213e1b72837](https://github.com/tomasbjerre/violation-comments-to-gitlab-gradle-plugin/commit/2d53213e1b72837) Tomas Bjerre *2017-10-28 17:58:43*
+[342e22ff02224a7](https://github.com/tomasbjerre/violation-comments-to-gitlab-gradle-plugin/commit/342e22ff02224a7) Tomas Bjerre *2017-10-28 18:16:19*
 
 

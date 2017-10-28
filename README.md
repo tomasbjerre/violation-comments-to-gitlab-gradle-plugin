@@ -59,9 +59,8 @@ Here is and example:
 ```
 buildscript {
  repositories {
-  maven {
-   url "https://plugins.gradle.org/m2/"
-  }
+  maven { url 'https://plugins.gradle.org/m2/' }
+  maven { url 'https://jitpack.io' }
  }
  dependencies {
   classpath "se.bjurr.violations:violation-comments-to-gitlab-gradle-plugin:1.0"
