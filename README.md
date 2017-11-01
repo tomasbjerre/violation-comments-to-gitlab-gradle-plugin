@@ -63,7 +63,7 @@ buildscript {
   maven { url 'https://jitpack.io' }
  }
  dependencies {
-  classpath "se.bjurr.violations:violation-comments-to-gitlab-gradle-plugin:1.0"
+  classpath "se.bjurr.violations:violation-comments-to-gitlab-gradle-plugin:1.1"
  }
 }
 
