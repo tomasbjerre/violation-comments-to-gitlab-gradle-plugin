@@ -8,6 +8,6 @@ public class ViolationCommentsToGitLabGradlePlugin implements Plugin<Project> {
   public void apply(Project target) {
     target
         .getExtensions()
-        .create("violationCommentsToGitHubPlugin", ViolationCommentsToGitLabPluginExtension.class);
+        .create("violationCommentsToGitLabPlugin", ViolationCommentsToGitLabPluginExtension.class);
   }
 }
