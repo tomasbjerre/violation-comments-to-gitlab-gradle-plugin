@@ -10,13 +10,11 @@ import static se.bjurr.violations.lib.model.SEVERITY.INFO;
 
 import java.util.ArrayList;
 import java.util.List;
-
 import org.gitlab.api.AuthMethod;
 import org.gitlab.api.TokenType;
 import org.gradle.api.DefaultTask;
 import org.gradle.api.tasks.TaskAction;
 import org.gradle.api.tasks.TaskExecutionException;
-
 import se.bjurr.violations.lib.model.SEVERITY;
 import se.bjurr.violations.lib.model.Violation;
 import se.bjurr.violations.lib.reports.Parser;
