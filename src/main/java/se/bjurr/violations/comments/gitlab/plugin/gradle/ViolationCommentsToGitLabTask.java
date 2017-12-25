@@ -5,16 +5,18 @@ import static org.gitlab.api.AuthMethod.URL_PARAMETER;
 import static org.gitlab.api.TokenType.ACCESS_TOKEN;
 import static org.gitlab.api.TokenType.PRIVATE_TOKEN;
 import static se.bjurr.violations.comments.gitlab.lib.ViolationCommentsToGitLabApi.violationCommentsToGitLabApi;
-import static se.bjurr.violations.lib.ViolationsReporterApi.violationsReporterApi;
+import static se.bjurr.violations.lib.ViolationsApi.violationsApi;
 import static se.bjurr.violations.lib.model.SEVERITY.INFO;
 
 import java.util.ArrayList;
 import java.util.List;
+
 import org.gitlab.api.AuthMethod;
 import org.gitlab.api.TokenType;
 import org.gradle.api.DefaultTask;
 import org.gradle.api.tasks.TaskAction;
 import org.gradle.api.tasks.TaskExecutionException;
+
 import se.bjurr.violations.lib.model.SEVERITY;
 import se.bjurr.violations.lib.model.Violation;
 import se.bjurr.violations.lib.reports.Parser;
@@ -106,7 +108,7 @@ public class ViolationCommentsToGitLabTask extends DefaultTask {
       final String reporter = configuredViolation.size() >= 4 ? configuredViolation.get(3) : null;
 
       final List<Violation> parsedViolations =
-          violationsReporterApi() //
+          violationsApi() //
               .findAll(Parser.valueOf(configuredViolation.get(0))) //
               .inFolder(configuredViolation.get(1)) //
               .withPattern(configuredViolation.get(2)) //
