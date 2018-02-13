@@ -3,8 +3,92 @@
 
 Changelog of Violation comments to gitlab gradle plugin.
 
-## Unreleased
+## 1.11
 ### No issue
+
+**PCLint**
+
+
+[b054d66b58cb66c](https://github.com/tomasbjerre/violation-comments-to-gitlab-gradle-plugin/commit/b054d66b58cb66c) Tomas Bjerre *2018-02-13 19:22:56*
+
+
+## 1.10
+### No issue
+
+**Google error-prone**
+
+
+[44a87a5b885634c](https://github.com/tomasbjerre/violation-comments-to-gitlab-gradle-plugin/commit/44a87a5b885634c) Tomas Bjerre *2018-01-14 12:09:24*
+
+
+## 1.9
+### No issue
+
+**Relocating to correct Java identifier**
+
+
+[4c0c9a65b5feea1](https://github.com/tomasbjerre/violation-comments-to-gitlab-gradle-plugin/commit/4c0c9a65b5feea1) Tomas Bjerre *2017-12-31 11:57:34*
+
+**Doc**
+
+
+[737c62346370230](https://github.com/tomasbjerre/violation-comments-to-gitlab-gradle-plugin/commit/737c62346370230) Tomas Bjerre *2017-12-25 19:57:42*
+
+
+## 1.8
+### No issue
+
+**Fixing encoding issues**
+
+
+[c6d55be6137b842](https://github.com/tomasbjerre/violation-comments-to-gitlab-gradle-plugin/commit/c6d55be6137b842) Tomas Bjerre *2017-12-25 19:55:32*
+
+**Correcting extension name**
+
+
+[2ca36d598217de8](https://github.com/tomasbjerre/violation-comments-to-gitlab-gradle-plugin/commit/2ca36d598217de8) Tomas Bjerre *2017-12-24 12:24:06*
+
+**Doc**
+
+
+[5d75c190c7126d0](https://github.com/tomasbjerre/violation-comments-to-gitlab-gradle-plugin/commit/5d75c190c7126d0) Tomas Bjerre *2017-12-22 20:05:27*
+
+
+## 1.7
+### No issue
+
+**Bumping version to fix faulty release**
+
+
+[23a848c3f3b796c](https://github.com/tomasbjerre/violation-comments-to-gitlab-gradle-plugin/commit/23a848c3f3b796c) Tomas Bjerre *2017-12-22 19:55:06*
+
+**Doc**
+
+
+[f22c37d04a6542a](https://github.com/tomasbjerre/violation-comments-to-gitlab-gradle-plugin/commit/f22c37d04a6542a) Tomas Bjerre *2017-12-22 15:49:08*
+
+
+## 1.6
+### No issue
+
+**DocFX parsing JSON with Gson, not ScriptEngine**
+
+
+[77a5847fe4e7fbf](https://github.com/tomasbjerre/violation-comments-to-gitlab-gradle-plugin/commit/77a5847fe4e7fbf) Tomas Bjerre *2017-12-22 12:55:25*
+
+**Doc**
+
+
+[65b917053c0e9d2](https://github.com/tomasbjerre/violation-comments-to-gitlab-gradle-plugin/commit/65b917053c0e9d2) Tomas Bjerre *2017-12-21 15:08:48*
+
+
+## 1.5
+### No issue
+
+**DocFX**
+
+
+[3872e6ad7c0adca](https://github.com/tomasbjerre/violation-comments-to-gitlab-gradle-plugin/commit/3872e6ad7c0adca) Tomas Bjerre *2017-12-21 15:05:38*
 
 **Doc**
 

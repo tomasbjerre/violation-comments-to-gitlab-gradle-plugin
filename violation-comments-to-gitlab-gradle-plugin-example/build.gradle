@@ -6,7 +6,7 @@ buildscript {
  }
 
  dependencies {
-  classpath "se.bjurr.violations:violation-comments-to-gitlab-gradle-plugin:1.11-SNAPSHOT"
+  classpath "se.bjurr.violations:violation-comments-to-gitlab-gradle-plugin:1.12-SNAPSHOT"
  }
 }
 
