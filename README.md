@@ -77,7 +77,7 @@ apply plugin: "se.bjurr.violations.violation-comments-to-gitlab-gradle-plugin"
 
 task violationCommentsToGitLab(type: se.bjurr.violations.comments.gitlab.plugin.gradle.ViolationCommentsToGitLabTask) {
  gitLabUrl = System.properties['GITLAB_URL'];
- mergeRequestId = System.properties['GITLAB_MERGEREQUESTID'];
+ mergeRequestIid = System.properties['GITLAB_MERGEREQUESTIID'];
  projectId = System.properties['GITLAB_PROJECTID'];
 
  commentOnlyChangedContent = true;

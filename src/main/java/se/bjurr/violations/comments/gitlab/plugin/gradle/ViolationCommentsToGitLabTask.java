@@ -28,7 +28,7 @@ public class ViolationCommentsToGitLabTask extends DefaultTask {
   private String gitLabUrl;
   private String apiToken;
   private String projectId;
-  private String mergeRequestId;
+  private String mergeRequestIid;
   private Boolean ignoreCertificateErrors = true;
   private Boolean apiTokenPrivate = true;
   private Boolean authMethodHeader = true;
@@ -36,70 +36,75 @@ public class ViolationCommentsToGitLabTask extends DefaultTask {
   private Boolean keepOldComments = false;
   private Boolean shouldSetWip = false;
 
-  public void setCommentOnlyChangedContent(boolean commentOnlyChangedContent) {
+  public void setCommentOnlyChangedContent(final boolean commentOnlyChangedContent) {
     this.commentOnlyChangedContent = commentOnlyChangedContent;
   }
 
   public void setCreateCommentWithAllSingleFileComments(
-      boolean createCommentWithAllSingleFileComments) {
+      final boolean createCommentWithAllSingleFileComments) {
     this.createCommentWithAllSingleFileComments = createCommentWithAllSingleFileComments;
   }
 
-  public void setGitLabUrl(String gitLabUrl) {
+  public void setGitLabUrl(final String gitLabUrl) {
     this.gitLabUrl = gitLabUrl;
   }
 
-  public void setApiToken(String apiToken) {
+  public void setApiToken(final String apiToken) {
     this.apiToken = apiToken;
   }
 
-  public void setProjectId(String projectId) {
+  public void setProjectId(final String projectId) {
     this.projectId = projectId;
   }
 
-  public void setMergeRequestId(String mergeRequestId) {
-    this.mergeRequestId = mergeRequestId;
+  public void setMergeRequestIid(final String mergeRequestIid) {
+    this.mergeRequestIid = mergeRequestIid;
   }
 
-  public void setIgnoreCertificateErrors(Boolean ignoreCertificateErrors) {
+  public void setIgnoreCertificateErrors(final Boolean ignoreCertificateErrors) {
     this.ignoreCertificateErrors = ignoreCertificateErrors;
   }
 
-  public void setApiTokenPrivate(Boolean apiTokenPrivate) {
+  public void setApiTokenPrivate(final Boolean apiTokenPrivate) {
     this.apiTokenPrivate = apiTokenPrivate;
   }
 
-  public void setAuthMethodHeader(Boolean authMethodHeader) {
+  public void setAuthMethodHeader(final Boolean authMethodHeader) {
     this.authMethodHeader = authMethodHeader;
   }
 
-  public void setMinSeverity(SEVERITY minSeverity) {
+  public void setMinSeverity(final SEVERITY minSeverity) {
     this.minSeverity = minSeverity;
   }
 
-  public void setKeepOldComments(Boolean keepOldComments) {
+  public void setKeepOldComments(final Boolean keepOldComments) {
     this.keepOldComments = keepOldComments;
   }
 
-  public void setShouldSetWip(Boolean shouldSetWip) {
+  public void setShouldSetWip(final Boolean shouldSetWip) {
     this.shouldSetWip = shouldSetWip;
   }
 
-  public void setViolations(List<List<String>> violations) {
+  public void setViolations(final List<List<String>> violations) {
     this.violations = violations;
   }
 
   @TaskAction
   public void gitChangelogPluginTasks() throws TaskExecutionException {
     getProject().getExtensions().findByType(ViolationCommentsToGitLabPluginExtension.class);
-    if (mergeRequestId == null || mergeRequestId.isEmpty()) {
-      getLogger().info("No merge request id defined, will not send violation comments to GitLab.");
+    if (mergeRequestIid == null || mergeRequestIid.isEmpty()) {
+      getLogger().info("No merge request iid defined, will not send violation comments to GitLab.");
       return;
     }
 
     getLogger()
         .info(
-            "Will comment project " + projectId + " and MR " + mergeRequestId + " on " + gitLabUrl);
+            "Will comment project "
+                + projectId
+                + " and MR "
+                + mergeRequestIid
+                + " on "
+                + gitLabUrl);
 
     List<Violation> allParsedViolations = new ArrayList<>();
     for (final List<String> configuredViolation : violations) {
@@ -121,11 +126,11 @@ public class ViolationCommentsToGitLabTask extends DefaultTask {
     try {
       final TokenType tokenType = apiTokenPrivate ? PRIVATE_TOKEN : ACCESS_TOKEN;
       final AuthMethod authMethod = authMethodHeader ? HEADER : URL_PARAMETER;
-      final Integer mergeRequestIdInteger = Integer.parseInt(mergeRequestId);
+      final Integer mergeRequestIidInteger = Integer.parseInt(mergeRequestIid);
       violationCommentsToGitLabApi() //
           .setHostUrl(gitLabUrl) //
           .setProjectId(projectId) //
-          .setMergeRequestId(mergeRequestIdInteger) //
+          .setMergeRequestIid(mergeRequestIidInteger) //
           .setApiToken(apiToken) //
           .setTokenType(tokenType) //
           .setMethod(authMethod) //
