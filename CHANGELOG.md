@@ -3,6 +3,24 @@
 
 Changelog of Violation comments to gitlab gradle plugin.
 
+## 1.14
+### No issue
+
+**GCC, ARM GCC and Doxygen**
+
+
+[4cbd4567c4607e0](https://github.com/tomasbjerre/violation-comments-to-gitlab-gradle-plugin/commit/4cbd4567c4607e0) Tomas Bjerre *2018-07-04 18:28:17*
+
+
+## 1.13
+### No issue
+
+**Custom template**
+
+
+[bb81db15466812d](https://github.com/tomasbjerre/violation-comments-to-gitlab-gradle-plugin/commit/bb81db15466812d) Tomas Bjerre *2018-07-04 12:26:38*
+
+
 ## 1.12
 ### GitHub #33 
 
