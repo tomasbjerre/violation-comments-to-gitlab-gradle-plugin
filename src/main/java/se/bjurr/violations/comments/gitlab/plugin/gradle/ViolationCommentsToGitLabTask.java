@@ -35,6 +35,7 @@ public class ViolationCommentsToGitLabTask extends DefaultTask {
   private SEVERITY minSeverity = INFO;
   private Boolean keepOldComments = false;
   private Boolean shouldSetWip = false;
+  private String commentTemplate;
 
   public void setCommentOnlyChangedContent(final boolean commentOnlyChangedContent) {
     this.commentOnlyChangedContent = commentOnlyChangedContent;
@@ -87,6 +88,10 @@ public class ViolationCommentsToGitLabTask extends DefaultTask {
 
   public void setViolations(final List<List<String>> violations) {
     this.violations = violations;
+  }
+
+  public void setCommentTemplate(final String commentTemplate) {
+    this.commentTemplate = commentTemplate;
   }
 
   @TaskAction
@@ -144,6 +149,7 @@ public class ViolationCommentsToGitLabTask extends DefaultTask {
           .setViolations(allParsedViolations) //
           .setShouldKeepOldComments(keepOldComments) //
           .setShouldSetWIP(shouldSetWip) //
+          .withCommentTemplate(commentTemplate) //
           .toPullRequest();
     } catch (final Exception e) {
       getLogger().error("", e);

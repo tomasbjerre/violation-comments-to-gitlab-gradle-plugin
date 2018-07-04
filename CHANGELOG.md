@@ -3,13 +3,22 @@
 
 Changelog of Violation comments to gitlab gradle plugin.
 
-## Unreleased
+## 1.12
 ### GitHub #33 
 
 **NullAway**
 
 
 [2e71083511e69a0](https://github.com/tomasbjerre/violation-comments-to-gitlab-gradle-plugin/commit/2e71083511e69a0) Tomas Bjerre *2018-04-14 05:15:28*
+
+
+### No issue
+
+**Changing mergeRequestId to mergeRequestIid**
+
+ * Because it is named wrong in the Java GitLab API Lib! 
+
+[f605d91bc5ba256](https://github.com/tomasbjerre/violation-comments-to-gitlab-gradle-plugin/commit/f605d91bc5ba256) Tomas Bjerre *2018-04-22 16:15:15*
 
 
 ## 1.11
