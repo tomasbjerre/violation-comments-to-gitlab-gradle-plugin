@@ -3,6 +3,15 @@
 
 Changelog of Violation comments to gitlab gradle plugin.
 
+## 1.15
+### No issue
+
+**Using java-gitlab-api from Central**
+
+
+[222c4a081006c5b](https://github.com/tomasbjerre/violation-comments-to-gitlab-gradle-plugin/commit/222c4a081006c5b) Tomas Bjerre *2018-07-05 05:24:58*
+
+
 ## 1.14
 ### No issue
 
