@@ -3,6 +3,15 @@
 
 Changelog of Violation comments to gitlab gradle plugin.
 
+## 1.18
+### No issue
+
+**Fix optional rule in YAMLLint**
+
+
+[fd5a12fdadfe514](https://github.com/tomasbjerre/violation-comments-to-gitlab-gradle-plugin/commit/fd5a12fdadfe514) Tomas Bjerre *2018-09-17 13:47:31*
+
+
 ## 1.17
 ### No issue
 
