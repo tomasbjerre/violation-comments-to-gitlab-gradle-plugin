@@ -3,6 +3,15 @@
 
 Changelog of Violation comments to gitlab gradle plugin.
 
+## 1.19
+### No issue
+
+**Prettier logging**
+
+
+[3ba2faf285af6b7](https://github.com/tomasbjerre/violation-comments-to-gitlab-gradle-plugin/commit/3ba2faf285af6b7) Tomas Bjerre *2018-09-18 10:18:51*
+
+
 ## 1.18
 ### No issue
 
