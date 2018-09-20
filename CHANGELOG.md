@@ -3,6 +3,15 @@
 
 Changelog of Violation comments to gitlab gradle plugin.
 
+## 1.20
+### No issue
+
+**Kotlin Maven and Gradle parsers**
+
+
+[c84846ee282c823](https://github.com/tomasbjerre/violation-comments-to-gitlab-gradle-plugin/commit/c84846ee282c823) Tomas Bjerre *2018-09-20 14:32:44*
+
+
 ## 1.19
 ### No issue
 
