@@ -3,6 +3,15 @@
 
 Changelog of Violation comments to gitlab gradle plugin.
 
+## 1.21
+### No issue
+
+**Correcting Kotlin parsers**
+
+
+[eb371330521531e](https://github.com/tomasbjerre/violation-comments-to-gitlab-gradle-plugin/commit/eb371330521531e) Tomas Bjerre *2018-09-20 23:57:25*
+
+
 ## 1.20
 ### No issue
 
