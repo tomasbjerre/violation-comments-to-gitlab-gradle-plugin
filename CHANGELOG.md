@@ -3,6 +3,20 @@
 
 Changelog of Violation comments to gitlab gradle plugin.
 
+## 1.22
+### No issue
+
+**Avoid java-gitlab-api bug to spam logs with exception**
+
+
+[fede2ff1bacde6c](https://github.com/tomasbjerre/violation-comments-to-gitlab-gradle-plugin/commit/fede2ff1bacde6c) Tomas Bjerre *2018-09-22 17:04:40*
+
+**Documenting parsers as a table**
+
+
+[3758f85ebc9363a](https://github.com/tomasbjerre/violation-comments-to-gitlab-gradle-plugin/commit/3758f85ebc9363a) Tomas Bjerre *2018-09-22 08:45:44*
+
+
 ## 1.21
 ### No issue
 
