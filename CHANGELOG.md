@@ -6,6 +6,11 @@ Changelog of Violation comments to gitlab gradle plugin.
 ## Unreleased
 ### No issue
 
+**Automating reporters in readme**
+
+
+[837502fbe6f8bab](https://github.com/tomasbjerre/violation-comments-to-gitlab-gradle-plugin/commit/837502fbe6f8bab) Tomas Bjerre *2018-09-23 12:06:28*
+
 **Doc**
 
 
@@ -113,7 +118,7 @@ Changelog of Violation comments to gitlab gradle plugin.
 
 
 ## 1.12
-### GitHub #33 
+### GitHub #33   
 
 **NullAway**
 
