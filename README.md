@@ -94,6 +94,7 @@ task violationCommentsToGitLab(type: se.bjurr.violations.comments.gitlab.plugin.
 
  commentOnlyChangedContent = true;
  createCommentWithAllSingleFileComments = true;
+ createSingleFileComments = true;
  keepOldComments = false;
  minSeverity = "INFO";
 

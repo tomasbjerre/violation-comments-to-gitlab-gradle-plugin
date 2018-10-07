@@ -6,6 +6,11 @@ Changelog of Violation comments to gitlab gradle plugin.
 ## Unreleased
 ### No issue
 
+**Commenting on diff**
+
+
+[bcf4076c39e1668](https://github.com/tomasbjerre/violation-comments-to-gitlab-gradle-plugin/commit/bcf4076c39e1668) Tomas Bjerre *2018-10-07 12:22:01*
+
 **Automating reporters in readme**
 
 

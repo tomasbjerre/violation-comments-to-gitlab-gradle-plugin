@@ -25,6 +25,7 @@ public class ViolationCommentsToGitLabTask extends DefaultTask {
   private List<List<String>> violations = new ArrayList<>();
   private boolean commentOnlyChangedContent = true;
   private boolean createCommentWithAllSingleFileComments = true;
+  private boolean createSingleFileComments = true;
   private String gitLabUrl;
   private String apiToken;
   private String projectId;
@@ -44,6 +45,10 @@ public class ViolationCommentsToGitLabTask extends DefaultTask {
   public void setCreateCommentWithAllSingleFileComments(
       final boolean createCommentWithAllSingleFileComments) {
     this.createCommentWithAllSingleFileComments = createCommentWithAllSingleFileComments;
+  }
+
+  public void setCreateSingleFileComments(final boolean createSingleFileComments) {
+    this.createSingleFileComments = createSingleFileComments;
   }
 
   public void setGitLabUrl(final String gitLabUrl) {
@@ -141,10 +146,7 @@ public class ViolationCommentsToGitLabTask extends DefaultTask {
           .setMethod(authMethod) //
           .setCommentOnlyChangedContent(commentOnlyChangedContent) //
           .setCreateCommentWithAllSingleFileComments(createCommentWithAllSingleFileComments) //
-          /**
-           * Cannot yet support single file comments because the API does not support it.
-           * https://gitlab.com/gitlab-org/gitlab-ce/issues/14850
-           */
+          .setCreateSingleFileComments(createSingleFileComments) //
           .setIgnoreCertificateErrors(ignoreCertificateErrors) //
           .setViolations(allParsedViolations) //
           .setShouldKeepOldComments(keepOldComments) //
