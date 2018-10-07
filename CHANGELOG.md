@@ -3,8 +3,13 @@
 
 Changelog of Violation comments to gitlab gradle plugin.
 
-## Unreleased
+## 1.23
 ### No issue
+
+**Commenting on diff**
+
+
+[7ed3f551e1db586](https://github.com/tomasbjerre/violation-comments-to-gitlab-gradle-plugin/commit/7ed3f551e1db586) Tomas Bjerre *2018-10-07 14:24:18*
 
 **Commenting on diff**
 
