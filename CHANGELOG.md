@@ -3,6 +3,15 @@
 
 Changelog of Violation comments to gitlab gradle plugin.
 
+## 1.24
+### No issue
+
+**Avoiding NPE when line not in diff**
+
+
+[5f8cfe9218135d4](https://github.com/tomasbjerre/violation-comments-to-gitlab-gradle-plugin/commit/5f8cfe9218135d4) Tomas Bjerre *2018-10-08 17:21:24*
+
+
 ## 1.23
 ### No issue
 
