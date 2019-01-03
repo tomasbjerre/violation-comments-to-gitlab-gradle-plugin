@@ -3,6 +3,15 @@
 
 Changelog of Violation comments to gitlab gradle plugin.
 
+## 1.25
+### No issue
+
+**Correcting AnsibleLint parsing**
+
+
+[5bc341b4b651cd0](https://github.com/tomasbjerre/violation-comments-to-gitlab-gradle-plugin/commit/5bc341b4b651cd0) Tomas Bjerre *2019-01-03 17:30:25*
+
+
 ## 1.24
 ### No issue
 
