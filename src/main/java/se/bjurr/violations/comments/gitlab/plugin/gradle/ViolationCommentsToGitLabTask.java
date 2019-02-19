@@ -1,17 +1,12 @@
 package se.bjurr.violations.comments.gitlab.plugin.gradle;
 
-import static org.gitlab.api.AuthMethod.HEADER;
-import static org.gitlab.api.AuthMethod.URL_PARAMETER;
-import static org.gitlab.api.TokenType.ACCESS_TOKEN;
-import static org.gitlab.api.TokenType.PRIVATE_TOKEN;
 import static se.bjurr.violations.comments.gitlab.lib.ViolationCommentsToGitLabApi.violationCommentsToGitLabApi;
 import static se.bjurr.violations.lib.ViolationsApi.violationsApi;
 import static se.bjurr.violations.lib.model.SEVERITY.INFO;
 
 import java.util.ArrayList;
 import java.util.List;
-import org.gitlab.api.AuthMethod;
-import org.gitlab.api.TokenType;
+import org.gitlab4j.api.Constants.TokenType;
 import org.gradle.api.DefaultTask;
 import org.gradle.api.tasks.TaskAction;
 import org.gradle.api.tasks.TaskExecutionException;
@@ -32,11 +27,13 @@ public class ViolationCommentsToGitLabTask extends DefaultTask {
   private String mergeRequestIid;
   private Boolean ignoreCertificateErrors = true;
   private Boolean apiTokenPrivate = true;
-  private Boolean authMethodHeader = true;
   private SEVERITY minSeverity = INFO;
   private Boolean keepOldComments = false;
   private Boolean shouldSetWip = false;
   private String commentTemplate;
+  private String proxyServer;
+  private String proxyUser;
+  private String proxyPassword;
 
   public void setCommentOnlyChangedContent(final boolean commentOnlyChangedContent) {
     this.commentOnlyChangedContent = commentOnlyChangedContent;
@@ -75,10 +72,6 @@ public class ViolationCommentsToGitLabTask extends DefaultTask {
     this.apiTokenPrivate = apiTokenPrivate;
   }
 
-  public void setAuthMethodHeader(final Boolean authMethodHeader) {
-    this.authMethodHeader = authMethodHeader;
-  }
-
   public void setMinSeverity(final SEVERITY minSeverity) {
     this.minSeverity = minSeverity;
   }
@@ -97,6 +90,18 @@ public class ViolationCommentsToGitLabTask extends DefaultTask {
 
   public void setCommentTemplate(final String commentTemplate) {
     this.commentTemplate = commentTemplate;
+  }
+
+  public void setProxyServer(final String proxyServer) {
+    this.proxyServer = proxyServer;
+  }
+
+  public void setProxyUser(final String proxyUser) {
+    this.proxyUser = proxyUser;
+  }
+
+  public void setProxyPassword(final String proxyPassword) {
+    this.proxyPassword = proxyPassword;
   }
 
   @TaskAction
@@ -134,8 +139,7 @@ public class ViolationCommentsToGitLabTask extends DefaultTask {
     }
 
     try {
-      final TokenType tokenType = apiTokenPrivate ? PRIVATE_TOKEN : ACCESS_TOKEN;
-      final AuthMethod authMethod = authMethodHeader ? HEADER : URL_PARAMETER;
+      final TokenType tokenType = apiTokenPrivate ? TokenType.PRIVATE : TokenType.ACCESS;
       final Integer mergeRequestIidInteger = Integer.parseInt(mergeRequestIid);
       violationCommentsToGitLabApi() //
           .setHostUrl(gitLabUrl) //
@@ -143,7 +147,6 @@ public class ViolationCommentsToGitLabTask extends DefaultTask {
           .setMergeRequestIid(mergeRequestIidInteger) //
           .setApiToken(apiToken) //
           .setTokenType(tokenType) //
-          .setMethod(authMethod) //
           .setCommentOnlyChangedContent(commentOnlyChangedContent) //
           .setCreateCommentWithAllSingleFileComments(createCommentWithAllSingleFileComments) //
           .setCreateSingleFileComments(createSingleFileComments) //
@@ -151,7 +154,10 @@ public class ViolationCommentsToGitLabTask extends DefaultTask {
           .setViolations(allParsedViolations) //
           .setShouldKeepOldComments(keepOldComments) //
           .setShouldSetWIP(shouldSetWip) //
-          .withCommentTemplate(commentTemplate) //
+          .setCommentTemplate(commentTemplate) //
+          .setProxyServer(proxyServer) //
+          .setProxyUser(proxyUser) //
+          .setProxyPassword(proxyPassword) //
           .toPullRequest();
     } catch (final Exception e) {
       getLogger().error("", e);

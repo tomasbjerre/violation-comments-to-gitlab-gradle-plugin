@@ -21,13 +21,19 @@ task violationCommentsToGitLab(type: se.bjurr.violations.comments.gitlab.plugin.
  createSingleFileComments = true;
  keepOldComments = false;
  minSeverity = "INFO";
+ //commentTemplate = """
+ // See https://github.com/tomasbjerre/violation-comments-lib
+ //""" 
 
  apiTokenPrivate = true;
  apiToken = System.properties['GITLAB_APITOKEN'];
- authMethodHeader = true;
  ignoreCertificateErrors = true;
 
  shouldSetWip = false;
+ 
+ //proxyServer = ""
+ //proxyUser = ""
+ //proxyPassword = ""
 
  violations = [
   ["FINDBUGS",   ".", ".*/findbugs/.*\\.xml\$",   "Findbugs"],
