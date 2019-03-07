@@ -3,6 +3,15 @@
 
 Changelog of Violation comments to gitlab gradle plugin.
 
+## 1.27
+### No issue
+
+**golangci-lint**
+
+
+[f2f476dcc882a8a](https://github.com/tomasbjerre/violation-comments-to-gitlab-gradle-plugin/commit/f2f476dcc882a8a) Tomas Bjerre *2019-03-07 16:20:20*
+
+
 ## 1.26
 ### No issue
 
