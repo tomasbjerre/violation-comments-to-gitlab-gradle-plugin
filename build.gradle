@@ -20,5 +20,5 @@ apply from: project.buildscript.classLoader.getResource('gradle-plugin.gradle').
 apply from: project.buildscript.classLoader.getResource('violations.gradle').toURI()
 
 dependencies {
- compile 'se.bjurr.violations:violation-comments-to-gitlab-lib:1.67'
+ compile 'se.bjurr.violations:violation-comments-to-gitlab-lib:1.69'
 }
