@@ -3,6 +3,15 @@
 
 Changelog of Violation comments to gitlab gradle plugin.
 
+## 1.28
+### No issue
+
+**Sonar Report**
+
+
+[e6b1793e5e62eb1](https://github.com/tomasbjerre/violation-comments-to-gitlab-gradle-plugin/commit/e6b1793e5e62eb1) Tomas Bjerre *2019-03-23 14:45:38*
+
+
 ## 1.27
 ### No issue
 
