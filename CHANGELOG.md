@@ -3,6 +3,15 @@
 
 Changelog of Violation comments to gitlab gradle plugin.
 
+## 1.29
+### No issue
+
+**Correcting Sonar severity**
+
+
+[898c291b64d0945](https://github.com/tomasbjerre/violation-comments-to-gitlab-gradle-plugin/commit/898c291b64d0945) Tomas Bjerre *2019-03-30 08:20:23*
+
+
 ## 1.28
 ### No issue
 
