@@ -103,6 +103,7 @@ task violationCommentsToGitLab(type: se.bjurr.violations.comments.gitlab.plugin.
  createSingleFileComments = true;
  keepOldComments = false;
  minSeverity = "INFO";
+ maxNumberOfComments = 99999;
  //commentTemplate = """
  // See https://github.com/tomasbjerre/violation-comments-lib
  //""" 

@@ -34,6 +34,11 @@ public class ViolationCommentsToGitLabTask extends DefaultTask {
   private String proxyServer;
   private String proxyUser;
   private String proxyPassword;
+  private Integer maxNumberOfComments;
+
+  public void setMaxNumberOfComments(final Integer maxNumberOfComments) {
+    this.maxNumberOfComments = maxNumberOfComments;
+  }
 
   public void setCommentOnlyChangedContent(final boolean commentOnlyChangedContent) {
     this.commentOnlyChangedContent = commentOnlyChangedContent;
@@ -158,6 +163,7 @@ public class ViolationCommentsToGitLabTask extends DefaultTask {
           .setProxyServer(proxyServer) //
           .setProxyUser(proxyUser) //
           .setProxyPassword(proxyPassword) //
+          .setMaxNumberOfViolations(maxNumberOfComments) //
           .toPullRequest();
     } catch (final Exception e) {
       getLogger().error("", e);
