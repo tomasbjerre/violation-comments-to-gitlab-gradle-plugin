@@ -3,6 +3,15 @@
 
 Changelog of Violation comments to gitlab gradle plugin.
 
+## 1.30
+### No issue
+
+**maxNumberOfComments**
+
+
+[06286a6cd97f093](https://github.com/tomasbjerre/violation-comments-to-gitlab-gradle-plugin/commit/06286a6cd97f093) Tomas Bjerre *2019-03-31 16:39:04*
+
+
 ## 1.29
 ### No issue
 
