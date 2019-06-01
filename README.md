@@ -81,7 +81,7 @@ There is a running example [here](/violation-comments-to-gitlab-gradle-plugin-ex
 
 Here is and example: 
 
-``
+```
 buildscript {
  repositories {
   maven { url 'https://plugins.gradle.org/m2/' }
