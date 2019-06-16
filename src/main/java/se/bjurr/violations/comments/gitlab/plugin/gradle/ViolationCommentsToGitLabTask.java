@@ -19,6 +19,7 @@ public class ViolationCommentsToGitLabTask extends DefaultTask {
 
   private List<List<String>> violations = new ArrayList<>();
   private boolean commentOnlyChangedContent = true;
+  private boolean commentOnlyChangedFiles = true;
   private boolean createCommentWithAllSingleFileComments = true;
   private boolean createSingleFileComments = true;
   private String gitLabUrl;
@@ -38,6 +39,10 @@ public class ViolationCommentsToGitLabTask extends DefaultTask {
 
   public void setMaxNumberOfComments(final Integer maxNumberOfComments) {
     this.maxNumberOfComments = maxNumberOfComments;
+  }
+
+  public void setCommentOnlyChangedFiles(final boolean commentOnlyChangedFiles) {
+    this.commentOnlyChangedFiles = commentOnlyChangedFiles;
   }
 
   public void setCommentOnlyChangedContent(final boolean commentOnlyChangedContent) {
@@ -153,6 +158,7 @@ public class ViolationCommentsToGitLabTask extends DefaultTask {
           .setApiToken(apiToken) //
           .setTokenType(tokenType) //
           .setCommentOnlyChangedContent(commentOnlyChangedContent) //
+          .withShouldCommentOnlyChangedFiles(commentOnlyChangedFiles) //
           .setCreateCommentWithAllSingleFileComments(createCommentWithAllSingleFileComments) //
           .setCreateSingleFileComments(createSingleFileComments) //
           .setIgnoreCertificateErrors(ignoreCertificateErrors) //
