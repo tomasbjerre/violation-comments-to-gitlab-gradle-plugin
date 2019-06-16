@@ -3,6 +3,20 @@
 
 Changelog of Violation comments to gitlab gradle plugin.
 
+## 1.31
+### No issue
+
+**commentOnlyChangedFiles**
+
+
+[6a884a6909ce235](https://github.com/tomasbjerre/violation-comments-to-gitlab-gradle-plugin/commit/6a884a6909ce235) Tomas Bjerre *2019-06-16 17:42:14*
+
+**doc**
+
+
+[20dddcdc6110b93](https://github.com/tomasbjerre/violation-comments-to-gitlab-gradle-plugin/commit/20dddcdc6110b93) Tomas Bjerre *2019-06-01 09:56:00*
+
+
 ## 1.30
 ### No issue
 
