@@ -3,6 +3,15 @@
 
 Changelog of Violation comments to gitlab gradle plugin.
 
+## 1.32
+### No issue
+
+**Changing name of JSHINT parser to JSLINT**
+
+
+[7a9192ac5c187d6](https://github.com/tomasbjerre/violation-comments-to-gitlab-gradle-plugin/commit/7a9192ac5c187d6) Tomas Bjerre *2019-08-03 11:53:35*
+
+
 ## 1.31
 ### No issue
 
