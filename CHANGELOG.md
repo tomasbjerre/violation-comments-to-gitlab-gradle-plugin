@@ -3,8 +3,13 @@
 
 Changelog of Violation comments to gitlab gradle plugin.
 
-## Unreleased
+## 1.34
 ### No issue
+
+**Corrections in Pydocstyle**
+
+
+[48924f3044957a5](https://github.com/tomasbjerre/violation-comments-to-gitlab-gradle-plugin/commit/48924f3044957a5) Tomas Bjerre *2019-10-10 16:07:55*
 
 **1.34-SNAPSHOT**
 
