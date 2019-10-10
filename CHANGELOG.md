@@ -6,6 +6,16 @@ Changelog of Violation comments to gitlab gradle plugin.
 ## Unreleased
 ### No issue
 
+**1.34-SNAPSHOT**
+
+
+[ccc435bf721bc32](https://github.com/tomasbjerre/violation-comments-to-gitlab-gradle-plugin/commit/ccc435bf721bc32) Tomas Bjerre *2019-10-09 19:26:54*
+
+**Correcting missing diff_refs**
+
+
+[8dcfdd8396200aa](https://github.com/tomasbjerre/violation-comments-to-gitlab-gradle-plugin/commit/8dcfdd8396200aa) Tomas Bjerre *2019-10-09 19:04:06*
+
 **doc**
 
 
