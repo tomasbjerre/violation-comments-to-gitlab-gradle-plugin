@@ -3,6 +3,15 @@
 
 Changelog of Violation comments to gitlab gradle plugin.
 
+## 1.35
+### GitHub #80   
+
+**Add support for sonar issue report formats >= v7.5 tomasbjerre/violations-lib**
+
+
+[e894cffd94f4012](https://github.com/tomasbjerre/violation-comments-to-gitlab-gradle-plugin/commit/e894cffd94f4012) Tomas Bjerre *2020-01-03 07:39:15*
+
+
 ## 1.34
 ### No issue
 
