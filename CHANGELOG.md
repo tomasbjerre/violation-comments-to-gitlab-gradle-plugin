@@ -3,6 +3,15 @@
 
 Changelog of Violation comments to gitlab gradle plugin.
 
+## 1.37
+### No issue
+
+**New: custom logging in violations-lib**
+
+
+[a620ec1c66f8087](https://github.com/tomasbjerre/violation-comments-to-gitlab-gradle-plugin/commit/a620ec1c66f8087) Tomas Bjerre *2020-07-05 13:34:42*
+
+
 ## 1.36
 ### GitHub #82   
 
