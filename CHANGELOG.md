@@ -3,13 +3,13 @@
 
 Changelog of Violation comments to gitlab gradle plugin.
 
-## Unreleased
+## 1.39
 ### No issue
 
 **violations-lib 1.137**
 
 
-[415c02c153eb24b](https://github.com/tomasbjerre/violation-comments-to-gitlab-gradle-plugin/commit/415c02c153eb24b) Tomas Bjerre *2020-11-27 15:49:14*
+[0ef27b1615c9bab](https://github.com/tomasbjerre/violation-comments-to-gitlab-gradle-plugin/commit/0ef27b1615c9bab) Tomas Bjerre *2020-11-27 15:50:00*
 
 
 ## 1.38
