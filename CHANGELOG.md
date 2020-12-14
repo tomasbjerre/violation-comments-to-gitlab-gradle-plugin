@@ -3,6 +3,15 @@
 
 Changelog of Violation comments to gitlab gradle plugin.
 
+## 1.40
+### GitHub #117   
+
+**Correctings in patchparsing tomasbjerre/violations-lib**
+
+
+[98e8420d006da8f](https://github.com/tomasbjerre/violation-comments-to-gitlab-gradle-plugin/commit/98e8420d006da8f) Tomas Bjerre *2020-12-14 15:16:19*
+
+
 ## 1.39
 ### No issue
 
