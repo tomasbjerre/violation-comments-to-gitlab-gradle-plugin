@@ -1,7 +1,16 @@
 
- # Violation comments to gitlab gradle plugin changelog
+# violation-comments-to-gitlab-gradle-plugin changelog
 
-Changelog of Violation comments to gitlab gradle plugin.
+Changelog of violation-comments-to-gitlab-gradle-plugin.
+
+## 1.41.1
+### No issue
+
+**new build script**
+
+
+[973bbc1d6c67da5](https://github.com/tomasbjerre/violation-comments-to-gitlab-gradle-plugin/commit/973bbc1d6c67da5) Tomas Bjerre *2021-04-04 15:15:21*
+
 
 ## 1.40
 ### GitHub #117   
@@ -309,7 +318,7 @@ Changelog of Violation comments to gitlab gradle plugin.
 
 **Changing mergeRequestId to mergeRequestIid**
 
- * Because it is named wrong in the Java GitLab API Lib! 
+* Because it is named wrong in the Java GitLab API Lib! 
 
 [f605d91bc5ba256](https://github.com/tomasbjerre/violation-comments-to-gitlab-gradle-plugin/commit/f605d91bc5ba256) Tomas Bjerre *2018-04-22 16:15:15*
 
@@ -448,4 +457,3 @@ Changelog of Violation comments to gitlab gradle plugin.
 [b05b63f14374b6e](https://github.com/tomasbjerre/violation-comments-to-gitlab-gradle-plugin/commit/b05b63f14374b6e) Tomas Bjerre *2017-10-28 18:25:25*
 
 
- 
