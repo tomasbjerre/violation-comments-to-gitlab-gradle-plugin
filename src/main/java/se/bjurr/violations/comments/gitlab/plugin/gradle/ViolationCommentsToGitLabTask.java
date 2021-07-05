@@ -24,6 +24,7 @@ public class ViolationCommentsToGitLabTask extends DefaultTask {
 
   private List<List<String>> violations = new ArrayList<>();
   private boolean commentOnlyChangedContent = true;
+  private int commentOnlyChangedContentContext = 0;
   private boolean commentOnlyChangedFiles = true;
   private boolean createCommentWithAllSingleFileComments = true;
   private boolean createSingleFileComments = true;
@@ -52,6 +53,10 @@ public class ViolationCommentsToGitLabTask extends DefaultTask {
 
   public void setCommentOnlyChangedContent(final boolean commentOnlyChangedContent) {
     this.commentOnlyChangedContent = commentOnlyChangedContent;
+  }
+
+  public void setCommentOnlyChangedContentContext(final int commentOnlyChangedContentContext) {
+    this.commentOnlyChangedContentContext = commentOnlyChangedContentContext;
   }
 
   public void setCreateCommentWithAllSingleFileComments(
@@ -195,6 +200,7 @@ public class ViolationCommentsToGitLabTask extends DefaultTask {
           .setApiToken(this.apiToken)
           .setTokenType(tokenType)
           .setCommentOnlyChangedContent(this.commentOnlyChangedContent) //
+          .setCommentOnlyChangedContentContext(this.commentOnlyChangedContentContext) //
           .withShouldCommentOnlyChangedFiles(this.commentOnlyChangedFiles) //
           .setCreateCommentWithAllSingleFileComments(
               this.createCommentWithAllSingleFileComments) //

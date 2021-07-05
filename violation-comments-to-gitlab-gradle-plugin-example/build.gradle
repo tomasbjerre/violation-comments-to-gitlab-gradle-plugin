@@ -17,6 +17,7 @@ task violationCommentsToGitLab(type: se.bjurr.violations.comments.gitlab.plugin.
  projectId = System.properties['GITLAB_PROJECTID'];
 
  commentOnlyChangedContent = true;
+ commentOnlyChangedContentContext = 0;
  createCommentWithAllSingleFileComments = true;
  createSingleFileComments = true;
  keepOldComments = false;
