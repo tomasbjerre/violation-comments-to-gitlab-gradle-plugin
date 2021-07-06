@@ -2,6 +2,21 @@
 
 Changelog of violation-comments-to-gitlab-gradle-plugin.
 
+## [1.41.3](https://github.com/tomasbjerre/violation-comments-to-gitlab-gradle-plugin/releases/tag/1.41.3) (2021-07-06)
+
+
+
+
+
+
+
+### Other changes
+
+**Giving access to the commentOnlyChangedContentContext parameter**
+
+
+[ffd1d](https://github.com/tomasbjerre/violation-comments-to-gitlab-gradle-plugin/commit/ffd1d817d35649b) Aurelian Teglas *2021-07-05 17:05:22*
+
 ## [1.41.2](https://github.com/tomasbjerre/violation-comments-to-gitlab-gradle-plugin/releases/tag/1.41.2) (2021-07-03)
 
 
