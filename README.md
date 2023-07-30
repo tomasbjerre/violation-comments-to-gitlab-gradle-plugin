@@ -8,6 +8,8 @@ This is a Gradle plugin for [Violation Comments to GitLab Lib](https://github.co
 
 It can parse results from static code analysis and comment merge requests in GitLab with them.
 
+An alternative is also to have [violations-command-line](https://github.com/tomasbjerre/violations-command-line) convert the violations to `CodeClimate` format and upload that to GitLab. It is explained in readme of [violations-command-line](https://github.com/tomasbjerre/violations-command-line).
+
 The **merge must be performed first** in order for the commented lines in the MR to match the lines reported by the analysis tools!
 
 Example of supported reports are available [here](https://github.com/tomasbjerre/violations-lib/tree/master/src/test/resources).
