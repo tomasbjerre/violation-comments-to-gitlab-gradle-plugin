@@ -1,3 +1,12 @@
+
+There are very few users of this tool, so I am archiving it and referring to:
+
+ - https://github.com/tomasbjerre/violation-comments-to-gitlab-command-line
+ - https://github.com/jenkinsci/violation-comments-to-gitlab-plugin/
+ - https://github.com/tomasbjerre/violations-command-line
+
+-------
+
 # Violation Comments to GitLab Gradle Plugin
 
 [![Build Status](https://travis-ci.org/tomasbjerre/violation-comments-to-gitlab-gradle-plugin.svg?branch=master)](https://travis-ci.org/tomasbjerre/violation-comments-to-gitlab-gradle-plugin)
